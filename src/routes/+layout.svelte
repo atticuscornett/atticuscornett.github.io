@@ -12,8 +12,7 @@
 {@render children()}
 
 <style>
-	:global(body) {
-		margin: 0;
-		padding: 0;
+	:global(body){
+		background: rgb(180,180,180);
 	}
 </style>

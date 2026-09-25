@@ -30,3 +30,30 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* Import Noto Serif fonts */
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('/fonts/NotoSerif-Italic.ttf') format('ttf');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('/fonts/NotoSerif-LightItalic.ttf') format('ttf');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+}
