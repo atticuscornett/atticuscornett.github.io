@@ -6,6 +6,8 @@ import Section from "$lib/components/Section.svelte";
     <div class="introduction">
         <h2 class="head">i am</h2>
         <h1 class="underline">atticus cornett.</h1>
+        <h3>// software developer<br>
+            // student @ Troy University</h3>
     </div>
 </Section>
 <Section name="about-me" style="black">
@@ -20,7 +22,7 @@ import Section from "$lib/components/Section.svelte";
             I have experience with a number of programming languages & frameworks, including JavaScript, Java, Python,
             C++, Svelte, Capacitor, and more.
             I have numerous <span class="italic">open-source</span> projects that receive active maintenance and development
-            (<span class="italic">see below</span>) - some of which have received years of support and have been downloaded thousands of times.
+            (<a href="#projects" class="light-link">see below</a>) - some of which have received years of support and have been downloaded thousands of times.
             I love to learn new technologies and build things that are real, functional, and useful.
             If I sound like someone you would like to work with, <a href="#contact" class="light-link">please reach out!</a>
         </p>
@@ -144,5 +146,4 @@ import Section from "$lib/components/Section.svelte";
         font-style: italic;
         font-weight: 400;
     }
-
 </style>
