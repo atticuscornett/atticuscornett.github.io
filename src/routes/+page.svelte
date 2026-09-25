@@ -1,5 +1,6 @@
 <script>
 import Section from "$lib/components/Section.svelte";
+import AtmosWeather from "$lib/assets/AtmosWeather.svg";
 </script>
 
 <Section name="introduction" layout="center">
@@ -34,10 +35,14 @@ import Section from "$lib/components/Section.svelte";
         <h2 class="underline green-underline">Projects</h2>
     </div>
     <div class="right-side">
+        <h3 class="italic">Featured Project</h3>
+        <img src={AtmosWeather} alt="Project Icon" class="inline-icon">
+        <h2 class="inline-text">Atmos Weather</h2>
+        <h3>Tech Stack: Svelte, CapacitorJS, Java</h3>
         <p>
-            I am <span class="italic">Atticus Cornett</span>,
-            a software developer currently studying Computer Science at Troy University.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi magnam autem nostrum accusantium odit eligendi quaerat? Necessitatibus labore tenetur sunt cupiditate dicta, voluptates, molestias corporis iure perspiciatis, explicabo accusantium laudantium.
+            This is where I need to put a small description of the app.
+            There will be some additional metrics above that show the tech stack and stuff.
+            I am going to continue writing here to show what it would look like with a short description.
         </p>
     </div>
 </Section>
@@ -77,6 +82,7 @@ import Section from "$lib/components/Section.svelte";
     p {
         font-size: 2.25rem;
         margin-top: 4rem;
+        margin-bottom: 4rem;
         font-family: BDO Grotesk, sans-serif;
     }
 
@@ -145,5 +151,22 @@ import Section from "$lib/components/Section.svelte";
         font-family: "Noto Serif", serif;
         font-style: italic;
         font-weight: 400;
+    }
+
+    h3.italic {
+        margin-top: 3.5rem;
+    }
+
+    .inline-icon {
+        margin-top: 1rem;
+        display: inline;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .inline-text {
+        display: inline;
+        margin-left: 1rem;
+        vertical-align: ideographic;
     }
 </style>

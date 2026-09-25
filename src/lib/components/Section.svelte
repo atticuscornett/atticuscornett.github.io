@@ -1,5 +1,5 @@
 <script>
-    let {name,  style="gray", layout="flex", size="normal", children } = $props();
+    let {name, style="gray", layout="flex", size="normal", children } = $props();
 </script>
 
 <div class="section {style} {layout} {size}" id="{name}">
@@ -14,7 +14,7 @@
     }
 
     .gray {
-        background-color: rgb(180,180,180);
+        background-color: rgb(200, 200, 200);
     }
 
     .black {
@@ -30,7 +30,7 @@
     }
 
     .normal {
-        min-height: 65vh;
+        min-height: 75vh;
     }
 
     .section :global(h1){
@@ -41,7 +41,7 @@
     }
 
     .section.gray :global(.left-side) {
-        background-color: rgb(180,180,180);
+        background-color: rgb(200, 200, 200);
     }
 
     .section.black :global(.left-side) {
