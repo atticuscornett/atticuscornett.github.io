@@ -1,8 +1,8 @@
 <script>
-    let { style="gray", center=false, children } = $props();
+    let { style="gray", layout="flex", size="normal", children } = $props();
 </script>
 
-<div class="section {style} {center ? "center" : ""}">
+<div class="section {style} {layout} {size}">
     {@render children()}
 </div>
 
@@ -21,23 +21,42 @@
         background-color: rgb(10, 10, 10);
     }
 
-    .black :global(h1), .black :global(h2){
+    .black :global(h1), .black :global(h2), .black :global(p){
         color: white;
+    }
+
+    .black :global(h3){
+        color: rgb(175 175 175);
+    }
+
+    .normal {
+        min-height: 65vh;
     }
 
     .section :global(h1){
         font-family: 'BDO Grotesk', sans-serif;
         font-weight: 700;
         color: black;
-        text-decoration: underline;
-        text-decoration-color: blue;
-        text-decoration-thickness: 7px;
         font-size: 5rem;
+    }
+
+    .section.gray :global(.left-side) {
+        background-color: rgb(180,180,180);
+    }
+
+    .section.black :global(.left-side) {
+        background-color: rgb(10, 10, 10);
+
     }
 
     .center {
         display: grid;
         align-items: center;
         justify-content: center;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
     }
 </style>
