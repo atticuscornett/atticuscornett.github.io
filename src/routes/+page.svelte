@@ -2,13 +2,13 @@
 import Section from "$lib/components/Section.svelte";
 </script>
 
-<Section layout="center">
+<Section name="introduction" layout="center">
     <div class="introduction">
         <h2 class="head">i am</h2>
         <h1 class="underline">atticus cornett.</h1>
     </div>
 </Section>
-<Section style="black" layout="flex">
+<Section name="about-me" style="black">
     <div class="left-side">
         <h3>01</h3>
         <h2 class="underline red-underline">About Me</h2>
@@ -17,11 +17,16 @@ import Section from "$lib/components/Section.svelte";
         <p>
             I am <span class="italic">Atticus Cornett</span>,
             a software developer currently studying Computer Science at Troy University.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi magnam autem nostrum accusantium odit eligendi quaerat? Necessitatibus labore tenetur sunt cupiditate dicta, voluptates, molestias corporis iure perspiciatis, explicabo accusantium laudantium.
+            I have experience with a number of programming languages & frameworks, including JavaScript, Java, Python,
+            C++, Svelte, Capacitor, and more.
+            I have numerous <span class="italic">open-source</span> projects that receive active maintenance and development
+            (<span class="italic">see below</span>) - some of which have received years of support and have been downloaded thousands of times.
+            I love to learn new technologies and build things that are real, functional, and useful.
+            If I sound like someone you would like to work with, <a href="#contact" class="light-link">please reach out!</a>
         </p>
     </div>
 </Section>
-<Section>
+<Section name="projects">
     <div class="left-side">
         <h3>02</h3>
         <h2 class="underline green-underline">Projects</h2>
@@ -34,16 +39,15 @@ import Section from "$lib/components/Section.svelte";
         </p>
     </div>
 </Section>
-<Section style="black">
+<Section name="contact" style="black">
     <div class="left-side">
         <h3>03</h3>
         <h2 class="underline yellow-underline">Contact</h2>
     </div>
     <div class="right-side">
         <p>
-            I am <span class="italic">Atticus Cornett</span>,
-            a software developer currently studying Computer Science at Troy University.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi magnam autem nostrum accusantium odit eligendi quaerat? Necessitatibus labore tenetur sunt cupiditate dicta, voluptates, molestias corporis iure perspiciatis, explicabo accusantium laudantium.
+            Github
+            LinkedIn
         </p>
     </div>
 </Section>
@@ -91,7 +95,6 @@ import Section from "$lib/components/Section.svelte";
     .left-side {
         box-sizing: border-box;
         align-self: flex-start;
-        min-width: 30%;
         padding-left: 1rem;
         padding-right: 1rem;
         position: sticky;
@@ -130,6 +133,13 @@ import Section from "$lib/components/Section.svelte";
     }
 
     .italic {
+        font-family: "Noto Serif", serif;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    .light-link {
+        color: rgb(160 160 160);
         font-family: "Noto Serif", serif;
         font-style: italic;
         font-weight: 400;
