@@ -39,8 +39,11 @@ import placeholder from "$lib/assets/placeholder.jpg";
         <div class="featured-project-container">
             <div class="featured-project-header">
                 <h3 class="italic">Featured Project</h3>
-                <img src={AtmosWeather} alt="Project Icon" class="inline-icon">
-                <h2 class="inline-text">Atmos Weather</h2>
+                <div class="featured-project-title">
+                    <img src={AtmosWeather} alt="Project Icon" class="inline-icon">
+                    <h2 class="inline-text">Atmos Weather</h2>
+                </div>
+
                 <h3>Tech Stack: Svelte, CapacitorJS, Java</h3>
             </div>
             <img class="featured-project-image" src={placeholder} alt="Project Screenshot">
@@ -192,5 +195,9 @@ import placeholder from "$lib/assets/placeholder.jpg";
         flex-grow: 1;
         width: 100%;
         min-width: 350px;
+    }
+
+    .featured-project-title {
+        display: flex;
     }
 </style>
