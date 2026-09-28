@@ -1,6 +1,7 @@
 <script>
 import Section from "$lib/components/Section.svelte";
 import AtmosWeather from "$lib/assets/AtmosWeather.svg";
+import placeholder from "$lib/assets/placeholder.jpg";
 </script>
 
 <Section name="introduction" layout="center">
@@ -35,10 +36,17 @@ import AtmosWeather from "$lib/assets/AtmosWeather.svg";
         <h2 class="underline green-underline">Projects</h2>
     </div>
     <div class="right-side">
-        <h3 class="italic">Featured Project</h3>
-        <img src={AtmosWeather} alt="Project Icon" class="inline-icon">
-        <h2 class="inline-text">Atmos Weather</h2>
-        <h3>Tech Stack: Svelte, CapacitorJS, Java</h3>
+        <div class="featured-project-container">
+            <div class="featured-project-header">
+                <h3 class="italic">Featured Project</h3>
+                <img src={AtmosWeather} alt="Project Icon" class="inline-icon">
+                <h2 class="inline-text">Atmos Weather</h2>
+                <h3>Tech Stack: Svelte, CapacitorJS, Java</h3>
+            </div>
+            <img class="featured-project-image" src={placeholder} alt="Project Screenshot">
+        </div>
+
+
         <p>
             This is where I need to put a small description of the app.
             There will be some additional metrics above that show the tech stack and stuff.
@@ -153,10 +161,6 @@ import AtmosWeather from "$lib/assets/AtmosWeather.svg";
         font-weight: 400;
     }
 
-    h3.italic {
-        margin-top: 3.5rem;
-    }
-
     .inline-icon {
         margin-top: 1rem;
         display: inline;
@@ -168,5 +172,25 @@ import AtmosWeather from "$lib/assets/AtmosWeather.svg";
         display: inline;
         margin-left: 1rem;
         vertical-align: ideographic;
+    }
+
+    .featured-project-container {
+        display: flex;
+        padding-top: 4rem;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .featured-project-header {
+        flex-basis: 60%;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .featured-project-image {
+        flex-basis: 40%;
+        flex-grow: 1;
+        width: 100%;
+        min-width: 350px;
     }
 </style>
