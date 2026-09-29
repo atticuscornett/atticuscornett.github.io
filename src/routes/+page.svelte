@@ -1,7 +1,9 @@
 <script>
 import Section from "$lib/components/Section.svelte";
-import AtmosWeather from "$lib/assets/AtmosWeather.svg";
 import placeholder from "$lib/assets/placeholder.jpg";
+import {projects} from "$lib/ProjectDetails";
+
+let featuredProject = projects[0];
 </script>
 
 <Section name="introduction" layout="center">
@@ -40,21 +42,21 @@ import placeholder from "$lib/assets/placeholder.jpg";
             <div class="featured-project-header">
                 <h3 class="italic">Featured Project</h3>
                 <div class="featured-project-title">
-                    <img src={AtmosWeather} alt="Project Icon" class="inline-icon">
-                    <h2 class="inline-text">Atmos Weather</h2>
+                    <img src={featuredProject.iconSrc} alt="Project Icon" class="inline-icon">
+                    <h2 class="inline-text">{featuredProject.name}</h2>
                 </div>
-
-                <h3>Tech Stack: Svelte, CapacitorJS, Java</h3>
+                <h3>Tech Stack: {featuredProject.technologies.join(", ")}</h3>
+                <button>View Repository</button>
+                <button>View {featuredProject.name} Website</button>
             </div>
-            <img class="featured-project-image" src={placeholder} alt="Project Screenshot">
+            <img class="featured-project-image" src={featuredProject.screenshotSrcs[0]} alt="{featuredProject.name} Screenshot">
         </div>
 
 
         <p>
-            This is where I need to put a small description of the app.
-            There will be some additional metrics above that show the tech stack and stuff.
-            I am going to continue writing here to show what it would look like with a short description.
+            {featuredProject.description}
         </p>
+        <button class="positive-dark">See All Projects</button>
     </div>
 </Section>
 <Section name="contact" style="black">
