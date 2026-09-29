@@ -35,7 +35,7 @@
 
 @font-face {
     font-family: 'Noto Serif';
-    src: url('/fonts/NotoSerif-Italic.ttf') format('ttf');
+    src: url('/fonts/NotoSerif-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
     font-display: swap;

@@ -104,8 +104,8 @@ import placeholder from "$lib/assets/placeholder.jpg";
     }
 
     .head {
-        font-family: 'Noto Serif', serif;
-        font-weight: 300;
+        font-family: "Noto Serif", serif;
+        font-weight: 600;
         font-style: italic;
         margin: 0;
         font-size: 3rem;
