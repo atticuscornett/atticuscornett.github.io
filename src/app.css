@@ -59,16 +59,16 @@ body {
     padding: 0;
 }
 
-button {
+a {
     cursor: pointer;
 }
 
-button.positive-dark {
+a.button-style.positive-dark {
     background: black;
     text-decoration: underline limegreen 0.2rem;
 }
 
-button {
+a.button-style {
     font-size: 1.5rem;
     background: black;
     color: white;
@@ -81,4 +81,7 @@ button {
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
 }

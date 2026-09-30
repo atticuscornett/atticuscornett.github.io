@@ -1,9 +1,19 @@
 <script>
 import Section from "$lib/components/Section.svelte";
-import placeholder from "$lib/assets/placeholder.jpg";
 import {projects} from "$lib/ProjectDetails";
 
 let featuredProject = projects[0];
+
+let getRandomFeaturedProject = () => {
+    let randomIndex = Math.floor(Math.random() * projects.length);
+    if (projects[randomIndex].featured) {
+        featuredProject = projects[randomIndex];
+    } else {
+        getRandomFeaturedProject();
+    }
+};
+
+getRandomFeaturedProject();
 </script>
 
 <Section name="introduction" layout="center">
@@ -46,8 +56,13 @@ let featuredProject = projects[0];
                     <h2 class="inline-text">{featuredProject.name}</h2>
                 </div>
                 <h3>Tech Stack: {featuredProject.technologies.join(", ")}</h3>
-                <button>View Repository</button>
-                <button>View {featuredProject.name} Website</button>
+                <br>
+                {#if featuredProject.projectRepo}
+                    <a class="top-margin button-style" href={featuredProject.projectRepo} rel="external" target="_blank">View Repository</a>
+                {/if}
+                {#if featuredProject.projectSite}
+                    <a class="button-style" href={featuredProject.projectSite} rel="external" target="_blank">View {featuredProject.name} Website</a>
+                {/if}
             </div>
             <img class="featured-project-image" src={featuredProject.screenshotSrcs[0]} alt="{featuredProject.name} Screenshot">
         </div>
@@ -56,7 +71,7 @@ let featuredProject = projects[0];
         <p>
             {featuredProject.description}
         </p>
-        <button class="positive-dark">See All Projects</button>
+        <a class="button-style positive-dark bottom-margin">See All Projects</a>
     </div>
 </Section>
 <Section name="contact" style="black">
@@ -197,9 +212,21 @@ let featuredProject = projects[0];
         flex-grow: 1;
         width: 100%;
         min-width: 350px;
+        height: auto;
+        align-self: baseline;
+        border-radius: 7px;
     }
 
     .featured-project-title {
         display: flex;
+    }
+
+    .top-margin {
+        margin-top: 1rem;
+    }
+
+    .bottom-margin {
+        display: inline-block;
+        margin-bottom: 3rem;
     }
 </style>

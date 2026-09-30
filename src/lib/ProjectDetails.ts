@@ -24,7 +24,7 @@ export const projects: ProjectDetails[] = [
         screenshotSrcs: [
             placeholder
         ],
-        projectSite: "",
-        projectRepo: "",
+        projectSite: "https://atticuscornett.github.io/AtmosWeather/",
+        projectRepo: "https://github.com/atticuscornett/AtmosWeather",
         featured: true,
     }];
