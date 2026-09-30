@@ -2,7 +2,7 @@
 import Section from "$lib/components/Section.svelte";
 import {projects} from "$lib/ProjectDetails";
 
-let featuredProject = projects[0];
+let featuredProject = $state(projects[0]);
 
 let getRandomFeaturedProject = () => {
     let randomIndex = Math.floor(Math.random() * projects.length);
