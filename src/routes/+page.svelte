@@ -80,10 +80,37 @@ getRandomFeaturedProject();
         <h2 class="underline yellow-underline">Contact</h2>
     </div>
     <div class="right-side">
+        <h2 class="contact-header">Let's get in touch!</h2>
         <p>
             Github
             LinkedIn
         </p>
+
+        <form action="https://forms.un-static.com/forms/3bcb926c6f6afaf85183f7631e6ebee4df861f9b" method="POST">
+            <label>
+                Name<span class="red">*</span><br>
+                <input type="text" name="name" required>
+            </label>
+            <br>
+
+            <label>
+                Company/Organization<br>
+                <input type="text" name="company" required>
+            </label>
+            <br>
+
+            <label>
+                Email<span class="red">*</span><br>
+                <input type="email" name="email" required>
+            </label>
+            <br>
+
+            <label>
+                Message<span class="red">*</span><br>
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
     </div>
 </Section>
 
@@ -112,6 +139,39 @@ getRandomFeaturedProject();
         margin-top: 4rem;
         margin-bottom: 4rem;
         font-family: BDO Grotesk, sans-serif;
+    }
+
+    label {
+        color: white;
+        font-family: Iptex, monospace;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    label input {
+        background: black;
+        border: none;
+        border-bottom: gray 0.2rem solid;
+        color: white;
+        font-weight: 400;
+        width: 600px;
+        max-width: 100%;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 5px;
+        padding: 0 0.5rem 0 0.5rem;
+        font-family: "BDO Grotesk", sans-serif;
+    }
+
+    label input:focus-visible {
+        outline: none;
+        border-bottom: white 0.2rem solid;
+    }
+
+    .red {
+        color: red;
     }
 
 
@@ -219,6 +279,11 @@ getRandomFeaturedProject();
 
     .featured-project-title {
         display: flex;
+    }
+
+    .contact-header {
+        font-family: "Noto Serif", serif;
+        margin-top: 3.5rem;
     }
 
     .top-margin {
