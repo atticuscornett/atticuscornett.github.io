@@ -63,12 +63,12 @@ a {
     cursor: pointer;
 }
 
-a.button-style.positive-dark {
+.button-style.positive-dark {
     background: black;
     text-decoration: underline limegreen 0.2rem;
 }
 
-a.button-style {
+.button-style {
     font-size: 1.5rem;
     background: black;
     color: white;

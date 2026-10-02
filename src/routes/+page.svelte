@@ -109,7 +109,8 @@ getRandomFeaturedProject();
                 Message<span class="red">*</span><br>
                 <textarea name="message" required></textarea>
             </label>
-            <button type="submit">Send</button>
+            <br>
+            <button class="button-style" type="submit">Send</button>
         </form>
     </div>
 </Section>
@@ -155,8 +156,8 @@ getRandomFeaturedProject();
         border-bottom: gray 0.2rem solid;
         color: white;
         font-weight: 400;
-        width: 600px;
-        max-width: 100%;
+        width: 50rem;
+        max-width: 75vw;
         font-size: 1.5rem;
         margin-top: 1rem;
         margin-bottom: 1.5rem;
@@ -271,7 +272,7 @@ getRandomFeaturedProject();
         flex-basis: 40%;
         flex-grow: 1;
         width: 100%;
-        min-width: 350px;
+        min-width: 250px;
         height: auto;
         align-self: baseline;
         border-radius: 7px;
@@ -293,5 +294,26 @@ getRandomFeaturedProject();
     .bottom-margin {
         display: inline-block;
         margin-bottom: 3rem;
+    }
+
+    textarea {
+        background: black;
+        border: 0.2rem solid gray;
+        margin-top: 1rem;
+        width: 50rem;
+        max-width: 75vw;
+        padding: 0.5rem;
+        border-radius: 5px;
+        resize: none;
+        color: white;
+        min-height: 10rem;
+        font-size: 1.1rem;
+        outline: none;
+        font-family: "BDO Grotesk", sans-serif;
+    }
+
+    textarea:focus-visible {
+        outline: none;
+        border: 0.2rem solid white;
     }
 </style>
