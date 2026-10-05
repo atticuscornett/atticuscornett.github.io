@@ -35,6 +35,14 @@
 
 @font-face {
     font-family: 'Noto Serif';
+    src: url('/fonts/NotoSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif';
     src: url('/fonts/NotoSerif-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
@@ -74,6 +82,7 @@ a {
     color: white;
     border: none;
     font-family: "Noto Serif", serif;
+    font-style: italic;
     font-weight: 500;
     padding: 0.5rem 1rem 0.6rem 1rem;
     border-radius: 50rem;

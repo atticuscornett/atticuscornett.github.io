@@ -82,8 +82,9 @@ getRandomFeaturedProject();
     <div class="right-side">
         <h2 class="contact-header">Let's get in touch!</h2>
         <p>
-            Github
-            LinkedIn
+            You can find me on <a href="https://github.com/atticuscornett" rel="external" target="_blank" class="light-link">GitHub</a>
+            and <a href="https://www.linkedin.com/in/atticus-cornett/" rel="external" target="_blank" class="light-link">LinkedIn</a>.
+            If you prefer, you can also reach out to me directly using the form below. I look forward to hearing from you!
         </p>
 
         <form action="https://forms.un-static.com/forms/3bcb926c6f6afaf85183f7631e6ebee4df861f9b" method="POST">
@@ -94,8 +95,8 @@ getRandomFeaturedProject();
             <br>
 
             <label>
-                Company/Organization<br>
-                <input type="text" name="company" required>
+                Organization<br>
+                <input type="text" name="organization">
             </label>
             <br>
 
@@ -111,6 +112,12 @@ getRandomFeaturedProject();
             </label>
             <br>
             <button class="button-style" type="submit">Send</button>
+
+            <label class="special">
+                Website<br>
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </label>
+            <br>
         </form>
     </div>
 </Section>
@@ -150,6 +157,10 @@ getRandomFeaturedProject();
         margin-top: 0;
     }
 
+    button {
+        cursor: pointer;
+    }
+
     label input {
         background: black;
         border: none;
@@ -163,12 +174,22 @@ getRandomFeaturedProject();
         margin-bottom: 1.5rem;
         border-radius: 5px;
         padding: 0 0.5rem 0 0.5rem;
-        font-family: "BDO Grotesk", sans-serif;
+        font-family: "Noto Serif", serif;
     }
 
     label input:focus-visible {
         outline: none;
         border-bottom: white 0.2rem solid;
+    }
+
+    .special {
+        opacity: 0;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        height: 0;
+        width: 0;
+        z-index: -1;
     }
 
     .red {
@@ -208,8 +229,6 @@ getRandomFeaturedProject();
         padding-right: 1rem;
         padding-left: 1rem;
     }
-
-
 
     .underline {
         text-decoration: underline;
@@ -284,6 +303,7 @@ getRandomFeaturedProject();
 
     .contact-header {
         font-family: "Noto Serif", serif;
+        font-style: italic;
         margin-top: 3.5rem;
     }
 
@@ -309,7 +329,7 @@ getRandomFeaturedProject();
         min-height: 10rem;
         font-size: 1.1rem;
         outline: none;
-        font-family: "BDO Grotesk", sans-serif;
+        font-family: "Noto Serif", serif;
     }
 
     textarea:focus-visible {
