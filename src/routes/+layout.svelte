@@ -11,9 +11,9 @@
 
 {@render children()}
 
-<div>
+<div class="footer">
 	<h1>atticus cornett.</h1>
-	<h2><a href='/'>HOME</a> - <a href="/about">ABOUT</a> - <a href="/">PROJECTS</a> - <a href="/#contact">CONTACT</a></h2>
+	<h2><a href='/'>HOME</a> - <a href="/about">ABOUT</a> - <a href="/projects">PROJECTS</a> - <a href="/#contact">CONTACT</a></h2>
 </div>
 
 <style>
@@ -31,6 +31,7 @@
 
 	h2 {
 		font-family: Iptex, monospace;
+		font-size: 1.5rem;
 		text-align: center;
 		color: #323232;
 		margin-bottom: 2rem;
@@ -38,5 +39,9 @@
 
 	a {
 		color: #323232;
+	}
+
+	.footer {
+		padding-top: 2rem;
 	}
 </style>

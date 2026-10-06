@@ -3,6 +3,11 @@ import mimacro from "$lib/assets/icons/mimacro.png";
 import Archway from "$lib/assets/icons/Archway.svg";
 import placeholder from "$lib/assets/placeholder.jpg"
 
+import AtmosWeatherScreenshot1 from "$lib/assets/screenshots/AtmosWeatherScreenshot1.png";
+import AtmosWeatherScreenshot2 from "$lib/assets/screenshots/AtmosWeatherScreenshot2.png";
+import AtmosWeatherScreenshot3 from "$lib/assets/screenshots/AtmosWeatherScreenshot3.png";
+import AtmosWeatherScreenshot4 from "$lib/assets/screenshots/AtmosWeatherScreenshot4.png";
+
 export interface ProjectDetails {
     name: string;
     description: string;
@@ -24,7 +29,10 @@ export const projects: ProjectDetails[] = [
         technologies: ["Svelte", "JavaScript", "Electron", "Capacitor", "Java"],
         iconSrc: AtmosWeather,
         screenshotSrcs: [
-            placeholder
+            AtmosWeatherScreenshot1,
+            AtmosWeatherScreenshot2,
+            AtmosWeatherScreenshot3,
+            AtmosWeatherScreenshot4
         ],
         projectSite: "https://atticuscornett.github.io/AtmosWeather/",
         projectRepo: "https://github.com/atticuscornett/AtmosWeather",
@@ -54,6 +62,18 @@ export const projects: ProjectDetails[] = [
         technologies: ["Rust", "Tauri", "Svelte", "Javascript"],
         iconSrc: Archway,
         screenshotSrcs: [
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
+            placeholder,
             placeholder
         ],
         projectSite: "https://atticuscornett.github.io/archway/",

@@ -65,7 +65,7 @@ onMount(() => {
         <p>
             {featuredProject.description}
         </p>
-        <a class="button-style positive-dark bottom-margin">See All Projects</a>
+        <a class="button-style positive-dark bottom-margin" href="/projects">See All Projects</a>
     </div>
 </Section>
 <Section name="contact" style="black">
@@ -117,32 +117,6 @@ onMount(() => {
 </Section>
 
 <style>
-    h1 {
-        margin: 0;
-    }
-
-    h2 {
-        font-family: 'BDO Grotesk', sans-serif;
-        font-weight: 500;
-        font-size: 3.5rem;
-        margin: 0;
-    }
-
-    h3 {
-        font-family: "Iptex", monospace;
-        font-weight: 400;
-        font-size: 2rem;
-        margin: 0;
-        color: rgb(50, 50, 50);
-    }
-
-    p {
-        font-size: 2.25rem;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        font-family: BDO Grotesk, sans-serif;
-    }
-
     label {
         color: white;
         font-family: Iptex, monospace;
