@@ -8,6 +8,16 @@ import AtmosWeatherScreenshot2 from "$lib/assets/screenshots/AtmosWeatherScreens
 import AtmosWeatherScreenshot3 from "$lib/assets/screenshots/AtmosWeatherScreenshot3.png";
 import AtmosWeatherScreenshot4 from "$lib/assets/screenshots/AtmosWeatherScreenshot4.png";
 
+import mimacroScreenshot1 from "$lib/assets/screenshots/mimacroScreenshot1.png";
+import mimacroScreenshot2 from "$lib/assets/screenshots/mimacroScreenshot2.png";
+import mimacroScreenshot3 from "$lib/assets/screenshots/mimacroScreenshot3.png";
+
+import ArchwayScreenshot1 from "$lib/assets/screenshots/ArchwayScreenshot1.png";
+import ArchwayScreenshot2 from "$lib/assets/screenshots/ArchwayScreenshot2.png";
+import ArchwayScreenshot3 from "$lib/assets/screenshots/ArchwayScreenshot3.png";
+import ArchwayScreenshot4 from "$lib/assets/screenshots/ArchwayScreenshot4.png";
+import ArchwayScreenshot5 from "$lib/assets/screenshots/ArchwayScreenshot5.png";
+
 export interface ProjectDetails {
     name: string;
     description: string;
@@ -47,7 +57,9 @@ export const projects: ProjectDetails[] = [
         technologies: ["Svelte", "Javascript", "Electron", "ArduinoC"],
         iconSrc: mimacro,
         screenshotSrcs: [
-            placeholder
+            mimacroScreenshot1,
+            mimacroScreenshot2,
+            mimacroScreenshot3
         ],
         projectSite: "https://atticuscornett.github.io/mimacro/",
         projectRepo: "https://github.com/atticuscornett/mimacro",
@@ -62,19 +74,11 @@ export const projects: ProjectDetails[] = [
         technologies: ["Rust", "Tauri", "Svelte", "Javascript"],
         iconSrc: Archway,
         screenshotSrcs: [
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder
+            ArchwayScreenshot1,
+            ArchwayScreenshot2,
+            ArchwayScreenshot3,
+            ArchwayScreenshot4,
+            ArchwayScreenshot5
         ],
         projectSite: "https://atticuscornett.github.io/archway/",
         projectRepo: "https://github.com/atticuscornett/archway",

@@ -1,1 +1,3 @@
-<h1>This is the about page</h1>
+<svelte:head>
+    <title>Atticus Cornett - About</title>
+</svelte:head>

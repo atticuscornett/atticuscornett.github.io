@@ -12,6 +12,10 @@ onMount(() => {
 });
 </script>
 
+<svelte:head>
+    <title>Atticus Cornett - Software Developer</title>
+</svelte:head>
+
 <Section name="introduction" layout="center">
     <div class="introduction">
         <h2 class="head">i am</h2>

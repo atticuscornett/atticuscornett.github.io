@@ -3,6 +3,10 @@
     import Section from "$lib/components/Section.svelte";
 </script>
 
+<svelte:head>
+    <title>Atticus Cornett - Projects</title>
+</svelte:head>
+
 <a href="/"><h1>atticus cornett.</h1></a>
 <h2 class="subtitle">// Projects</h2>
 {#each projects as project, i (project.name)}
@@ -18,7 +22,18 @@
                 {/each}
             </div>
 
+            <h3>Tech Stack: {project.technologies.join(", ")}</h3>
+
             <p>{project.description}</p>
+
+            <div class="button-container">
+                {#if project.projectRepo}
+                    <a class="top-margin button-style" href={project.projectRepo} rel="external" target="_blank">View Repository</a>
+                {/if}
+                {#if project.projectSite}
+                    <a class="button-style" href={project.projectSite} rel="external" target="_blank">View {project.name} Website</a>
+                {/if}
+            </div>
         </div>
     </Section>
 {/each}
@@ -58,5 +73,13 @@
         overflow-x: auto;
         gap: 1.5rem;
         margin-top: 4rem;
+    }
+
+    .button-container {
+        padding-bottom: 2rem;
+    }
+
+    h3 {
+        margin-top: 1rem;
     }
 </style>

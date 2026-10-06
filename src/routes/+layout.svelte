@@ -13,7 +13,7 @@
 
 <div class="footer">
 	<h1>atticus cornett.</h1>
-	<h2><a href='/'>HOME</a> - <a href="/about">ABOUT</a> - <a href="/projects">PROJECTS</a> - <a href="/#contact">CONTACT</a></h2>
+	<h2><a href='/'>HOME</a> - <a href="/#about-me">ABOUT</a> - <a href="/projects">PROJECTS</a> - <a href="/#contact">CONTACT</a></h2>
 </div>
 
 <style>
