@@ -1,19 +1,15 @@
 <script>
+import {onMount} from "svelte";
 import Section from "$lib/components/Section.svelte";
 import {projects} from "$lib/ProjectDetails";
 
-let featuredProject = $state(projects[0]);
+const featuredProjects = projects.filter((project) => project.featured);
+let featuredProject = $state(featuredProjects[0]);
 
-let getRandomFeaturedProject = () => {
-    let randomIndex = Math.floor(Math.random() * projects.length);
-    if (projects[randomIndex].featured) {
-        featuredProject = projects[randomIndex];
-    } else {
-        getRandomFeaturedProject();
-    }
-};
-
-getRandomFeaturedProject();
+onMount(() => {
+    const randomIndex = Math.floor(Math.random() * featuredProjects.length);
+    featuredProject = featuredProjects[randomIndex];
+});
 </script>
 
 <Section name="introduction" layout="center">
@@ -66,8 +62,6 @@ getRandomFeaturedProject();
             </div>
             <img class="featured-project-image" src={featuredProject.screenshotSrcs[0]} alt="{featuredProject.name} Screenshot">
         </div>
-
-
         <p>
             {featuredProject.description}
         </p>
@@ -210,26 +204,6 @@ getRandomFeaturedProject();
         font-size: 3rem;
     }
 
-    .left-side {
-        box-sizing: border-box;
-        align-self: flex-start;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        position: sticky;
-        top: 0;
-        flex-basis: 30%;
-        flex-grow: 1;
-        padding-top: 0.5rem;
-    }
-
-    .right-side {
-        box-sizing: border-box;
-        flex-grow: 1;
-        flex-basis: 70%;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
     .underline {
         text-decoration: underline;
         text-decoration-color: blue;
@@ -262,7 +236,6 @@ getRandomFeaturedProject();
     }
 
     .inline-icon {
-        margin-top: 1rem;
         display: inline;
         height: 4rem;
         width: 4rem;
@@ -299,6 +272,7 @@ getRandomFeaturedProject();
 
     .featured-project-title {
         display: flex;
+        align-items: center;
     }
 
     .contact-header {
