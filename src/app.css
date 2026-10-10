@@ -140,3 +140,14 @@ p {
     margin-bottom: 4rem;
     font-family: BDO Grotesk, sans-serif;
 }
+
+/* Responsive Font Sizes for more comfortable layout on smaller screens */
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}

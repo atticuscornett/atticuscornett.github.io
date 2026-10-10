@@ -59,4 +59,10 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 768px) {
+        .section :global(h1){
+            font-size: 3rem;
+        }
+    }
 </style>
