@@ -82,4 +82,10 @@
     h3 {
         margin-top: 1rem;
     }
+
+    @media screen and (max-width: 600px) {
+        .screenshot {
+            min-width: 100%;
+        }
+    }
 </style>
