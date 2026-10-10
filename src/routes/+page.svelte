@@ -2,6 +2,7 @@
 import {onMount} from "svelte";
 import Section from "$lib/components/Section.svelte";
 import {projects} from "$lib/ProjectDetails";
+    import { page } from "$app/state";
 
 const featuredProjects = projects.filter((project) => project.featured);
 let featuredProject = $state(featuredProjects[0]);
@@ -84,6 +85,10 @@ onMount(() => {
             and <a href="https://www.linkedin.com/in/atticus-cornett/" rel="external" target="_blank" class="light-link">LinkedIn</a>.
             If you prefer, you can also reach out to me directly using the form below. I look forward to hearing from you!
         </p>
+
+        <h3 class="contact-thanks {(page.url.hash === "#contact-thanks") ? "show" : ""}" id="contact-thanks">
+            Message sent - thanks for reaching out!
+        </h3>
 
         <form action="https://forms.un-static.com/forms/3bcb926c6f6afaf85183f7631e6ebee4df861f9b" method="POST">
             <label>
@@ -257,6 +262,19 @@ onMount(() => {
         font-family: "Noto Serif", serif;
         font-style: italic;
         margin-top: 3.5rem;
+    }
+
+    .contact-thanks {
+        text-decoration: yellow solid 5px underline;
+        height: 1px;
+        visibility: hidden;
+    }
+
+    .contact-thanks.show {
+        display: block;
+        margin-bottom: 2rem;
+        height: auto;
+        visibility: visible;
     }
 
     .top-margin {
