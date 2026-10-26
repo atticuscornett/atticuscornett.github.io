@@ -1,6 +1,7 @@
 import AtmosWeather from "$lib/assets/icons/AtmosWeather.svg";
 import mimacro from "$lib/assets/icons/mimacro.png";
 import Archway from "$lib/assets/icons/Archway.svg";
+import BeatSaverSaver from "$lib/assets/icons/BeatSaverSaver.png"
 import placeholder from "$lib/assets/placeholder.jpg"
 
 import AtmosWeatherScreenshot1 from "$lib/assets/screenshots/AtmosWeatherScreenshot1.png";
@@ -83,5 +84,19 @@ export const projects: ProjectDetails[] = [
         projectSite: "https://atticuscornett.github.io/archway/",
         projectRepo: "https://github.com/atticuscornett/archway",
         featured: true,
+    },
+    {
+        name: "BeatSaverSaver",
+        description: "BeatSaverSaver is an unofficial BeatSaver client that allows users to download Beat Saber maps without " +
+            "needing to mod the game. The app includes a search and explore page that helps users find new maps and install " +
+            "them with just one click. Level previews, ratings, difficulties, and other stats can " +
+            "be viewed without leaving the app or installing the map. BeatSaverSaver is built with Svelte and Electron, " +
+            "and is available on multiple desktop platforms.",
+        technologies: ["Svelte", "JavaScript", "Electron"],
+        iconSrc: BeatSaverSaver,
+        screenshotSrcs: [],
+        projectSite: null,
+        projectRepo: "https://github.com/atticuscornett/beatsaversaver",
+        featured: false
     }
 ];
