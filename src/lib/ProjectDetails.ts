@@ -86,6 +86,19 @@ export const projects: ProjectDetails[] = [
         featured: true,
     },
     {
+        name: "WriteSmart",
+        description: "WriteSmart is an AI-powered writing assistance tool that was written in 24 hours for Troy Hack 2025. " +
+            "The app uses on-device AI to help users improve their writing by providing suggestions for grammar, style, and tone. " +
+            "WriteSmart also features a context-aware chat interface and rubric tool that provides suggestions to meet specific writing goals. " +
+            "This app was built with Svelte, Typescript, and Electron - and uses it Ollama to run AI models without reaching out to the cloud.",
+        technologies: ["Ollama", "Svelte", "Typescript", "Electron"],
+        iconSrc: "",
+        screenshotSrcs: [],
+        projectSite: null,
+        projectRepo: "https://github.com/atticuscornett/writesmart",
+        featured: false
+    },
+    {
         name: "BeatSaverSaver",
         description: "BeatSaverSaver is an unofficial BeatSaver client that allows users to download Beat Saber maps without " +
             "needing to mod the game. The app includes a search and explore page that helps users find new maps and install " +
