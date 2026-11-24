@@ -1,22 +1,22 @@
-import AtmosWeather from "$lib/assets/icons/AtmosWeather.svg";
-import mimacro from "$lib/assets/icons/mimacro.png";
-import Archway from "$lib/assets/icons/Archway.svg";
-import BeatSaverSaver from "$lib/assets/icons/BeatSaverSaver.png"
+import AtmosWeather from "#lib/assets/icons/AtmosWeather.svg";
+import mimacro from "#lib/assets/icons/mimacro.png";
+import Archway from "#lib/assets/icons/Archway.svg";
+import BeatSaverSaver from "#lib/assets/icons/BeatSaverSaver.png"
 
-import AtmosWeatherScreenshot1 from "$lib/assets/screenshots/AtmosWeatherScreenshot1.png";
-import AtmosWeatherScreenshot2 from "$lib/assets/screenshots/AtmosWeatherScreenshot2.png";
-import AtmosWeatherScreenshot3 from "$lib/assets/screenshots/AtmosWeatherScreenshot3.png";
-import AtmosWeatherScreenshot4 from "$lib/assets/screenshots/AtmosWeatherScreenshot4.png";
+import AtmosWeatherScreenshot1 from "#lib/assets/screenshots/AtmosWeatherScreenshot1.png";
+import AtmosWeatherScreenshot2 from "#lib/assets/screenshots/AtmosWeatherScreenshot2.png";
+import AtmosWeatherScreenshot3 from "#lib/assets/screenshots/AtmosWeatherScreenshot3.png";
+import AtmosWeatherScreenshot4 from "#lib/assets/screenshots/AtmosWeatherScreenshot4.png";
 
-import mimacroScreenshot1 from "$lib/assets/screenshots/mimacroScreenshot1.png";
-import mimacroScreenshot2 from "$lib/assets/screenshots/mimacroScreenshot2.png";
-import mimacroScreenshot3 from "$lib/assets/screenshots/mimacroScreenshot3.png";
+import mimacroScreenshot1 from "#lib/assets/screenshots/mimacroScreenshot1.png";
+import mimacroScreenshot2 from "#lib/assets/screenshots/mimacroScreenshot2.png";
+import mimacroScreenshot3 from "#lib/assets/screenshots/mimacroScreenshot3.png";
 
-import ArchwayScreenshot1 from "$lib/assets/screenshots/ArchwayScreenshot1.png";
-import ArchwayScreenshot2 from "$lib/assets/screenshots/ArchwayScreenshot2.png";
-import ArchwayScreenshot3 from "$lib/assets/screenshots/ArchwayScreenshot3.png";
-import ArchwayScreenshot4 from "$lib/assets/screenshots/ArchwayScreenshot4.png";
-import ArchwayScreenshot5 from "$lib/assets/screenshots/ArchwayScreenshot5.png";
+import ArchwayScreenshot1 from "#lib/assets/screenshots/ArchwayScreenshot1.png";
+import ArchwayScreenshot2 from "#lib/assets/screenshots/ArchwayScreenshot2.png";
+import ArchwayScreenshot3 from "#lib/assets/screenshots/ArchwayScreenshot3.png";
+import ArchwayScreenshot4 from "#lib/assets/screenshots/ArchwayScreenshot4.png";
+import ArchwayScreenshot5 from "#lib/assets/screenshots/ArchwayScreenshot5.png";
 
 export interface ProjectDetails {
     name: string;

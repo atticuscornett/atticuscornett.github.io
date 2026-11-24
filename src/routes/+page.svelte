@@ -1,8 +1,8 @@
 <script>
 import {onMount} from "svelte";
-import Section from "$lib/components/Section.svelte";
-import {projects} from "$lib/ProjectDetails";
-    import { page } from "$app/state";
+import Section from "#lib/components/Section.svelte";
+import {projects} from "#lib/ProjectDetails.ts";
+import { page } from "$app/state";
 
 const featuredProjects = projects.filter((project) => project.featured);
 let featuredProject = $state(featuredProjects[0]);

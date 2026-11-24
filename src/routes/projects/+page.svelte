@@ -1,6 +1,6 @@
 <script>
-    import {projects} from "$lib/ProjectDetails";
-    import Section from "$lib/components/Section.svelte";
+    import {projects} from "#lib/ProjectDetails.ts;
+    import Section from "#lib/components/Section.svelte";
 </script>
 
 <svelte:head>
