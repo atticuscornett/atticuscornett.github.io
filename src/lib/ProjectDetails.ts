@@ -2,7 +2,6 @@ import AtmosWeather from "$lib/assets/icons/AtmosWeather.svg";
 import mimacro from "$lib/assets/icons/mimacro.png";
 import Archway from "$lib/assets/icons/Archway.svg";
 import BeatSaverSaver from "$lib/assets/icons/BeatSaverSaver.png"
-import placeholder from "$lib/assets/placeholder.jpg"
 
 import AtmosWeatherScreenshot1 from "$lib/assets/screenshots/AtmosWeatherScreenshot1.png";
 import AtmosWeatherScreenshot2 from "$lib/assets/screenshots/AtmosWeatherScreenshot2.png";
@@ -50,6 +49,21 @@ export const projects: ProjectDetails[] = [
         featured: true,
     },
     {
+        name: "Ice Scraper",
+        description: "Created in 24 hours for TroyHack 2026, Ice Scraper is a program that uses local AI to find " +
+            "policy violations and potential sensitive information in PDFs and Word documents. Using a combination of multiple " +
+            "detection techniques, including classification models, semantic similarity, and regex patterns, Ice Scraper " +
+            "can dynamically highlight potential issues in a document and flag them for human review. Ice Scraper is designed " +
+            "with reviewer-friendly features to make document triage and review quick and intuitive. It is built with Python, " +
+            "HuggingFace models, and Eel, and uses local AI to ensure that sensitive information never leaves the user's device.",
+        technologies: ["Python", "HuggingFace Transformer Models", "HTML", "CSS", "Javascript", "Eel"],
+        iconSrc: "",
+        screenshotSrcs: [],
+        projectRepo: "https://github.com/atticuscornett/troyhack26",
+        projectSite: null,
+        featured: false
+    },
+    {
         name: "mimacro",
         description: "mimacro is an app that enables users to turn a microcontroller into a low-cost, customizable macro pad. " +
             "Supported devices can be automatically detected and configured - no coding required, eliminating the knowledge " +
@@ -87,7 +101,7 @@ export const projects: ProjectDetails[] = [
     },
     {
         name: "WriteSmart",
-        description: "WriteSmart is an AI-powered writing assistance tool that was written in 24 hours for Troy Hack 2025. " +
+        description: "WriteSmart is an AI-powered writing assistance tool that was written in 24 hours for TroyHack 2025. " +
             "The app uses on-device AI to help users improve their writing by providing suggestions for grammar, style, and tone. " +
             "WriteSmart also features a context-aware chat interface and rubric tool that provides suggestions to meet specific writing goals. " +
             "This app was built with Svelte, Typescript, and Electron - and uses it Ollama to run AI models without reaching out to the cloud.",
