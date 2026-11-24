@@ -25,7 +25,7 @@
         color: white;
     }
 
-    .black :global(h3){
+    .black :global(h3), .black :global(h4){
         color: rgb(175 175 175);
     }
 

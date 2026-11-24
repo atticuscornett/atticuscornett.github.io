@@ -27,6 +27,7 @@ export interface ProjectDetails {
     projectSite: string | null;
     projectRepo: string | null;
     featured: boolean;
+    awards?: string[];
 }
 
 export const projects: ProjectDetails[] = [
@@ -47,6 +48,7 @@ export const projects: ProjectDetails[] = [
         projectSite: "https://atticuscornett.github.io/AtmosWeather/",
         projectRepo: "https://github.com/atticuscornett/AtmosWeather",
         featured: true,
+        awards: ["2022 Congressional App Challenge Winner (AL-03)"]
     },
     {
         name: "Ice Scraper",
@@ -61,7 +63,8 @@ export const projects: ProjectDetails[] = [
         screenshotSrcs: [],
         projectRepo: "https://github.com/atticuscornett/troyhack26",
         projectSite: null,
-        featured: false
+        featured: false,
+        awards: ["TroyHack 2026 - 3rd Place Overall"]
     },
     {
         name: "mimacro",
@@ -79,6 +82,7 @@ export const projects: ProjectDetails[] = [
         projectSite: "https://atticuscornett.github.io/mimacro/",
         projectRepo: "https://github.com/atticuscornett/mimacro",
         featured: true,
+        awards: ["2023 Congressional App Challenge Winner (AL-03)"]
     },
     {
         name: "Archway",

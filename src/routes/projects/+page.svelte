@@ -23,6 +23,9 @@
             </div>
 
             <h3>Tech Stack: {project.technologies.join(", ")}</h3>
+            {#if project.awards && project.awards.length > 0}
+                <h4>Awards: {project.awards.join(", ")}</h4>
+            {/if}
 
             <p>{project.description}</p>
 
@@ -80,6 +83,10 @@
     }
 
     h3 {
+        margin-top: 1rem;
+    }
+
+    h4 {
         margin-top: 1rem;
     }
 
