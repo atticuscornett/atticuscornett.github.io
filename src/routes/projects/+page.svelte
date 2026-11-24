@@ -1,6 +1,7 @@
 <script>
-    import {projects} from "#lib/ProjectDetails.ts;
+    import {projects} from "#lib/ProjectDetails.ts";
     import Section from "#lib/components/Section.svelte";
+    import {revealTitle} from "#lib/animations";
 </script>
 
 <svelte:head>
@@ -11,9 +12,11 @@
 <h2 class="subtitle">// Projects</h2>
 {#each projects as project, i (project.name)}
     <Section style="{(i % 2 === 0) ? 'black' : 'gray'}" name="project-{i}">
-        <div class="left-side">
-            <h3>{String(i + 1).padStart(2, '0')}</h3>
-            <h2 class="underline green-underline">{project.name}</h2>
+        <div {@attach revealTitle} class="left-side">
+            <div class="animated-header">
+                <h3>{String(i + 1).padStart(2, '0')}</h3>
+                <h2 class="underline green-underline">{project.name}</h2>
+            </div>
         </div>
         <div class="right-side">
             <div class="screenshot-container">

@@ -3,6 +3,7 @@ import {onMount} from "svelte";
 import Section from "#lib/components/Section.svelte";
 import {projects} from "#lib/ProjectDetails.ts";
 import { page } from "$app/state";
+import {revealTitle} from "#lib/animations";
 
 const featuredProjects = projects.filter((project) => project.featured);
 let featuredProject = $state(featuredProjects[0]);
@@ -26,9 +27,11 @@ onMount(() => {
     </div>
 </Section>
 <Section name="about-me" style="black">
-    <div class="left-side">
-        <h3>01</h3>
-        <h2 class="underline red-underline">About Me</h2>
+    <div {@attach revealTitle} class="left-side">
+        <div class="animated-header">
+            <h3>01</h3>
+            <h2 class="underline red-underline">About Me</h2>
+        </div>
     </div>
     <div class="right-side">
         <p>
@@ -44,9 +47,11 @@ onMount(() => {
     </div>
 </Section>
 <Section name="projects">
-    <div class="left-side">
-        <h3>02</h3>
-        <h2 class="underline green-underline">Projects</h2>
+    <div {@attach revealTitle} class="left-side">
+        <div class="animated-header">
+            <h3>02</h3>
+            <h2 class="underline green-underline">Projects</h2>
+        </div>
     </div>
     <div class="right-side">
         <div class="featured-project-container">
@@ -74,9 +79,11 @@ onMount(() => {
     </div>
 </Section>
 <Section name="contact" style="black">
-    <div class="left-side">
-        <h3>03</h3>
-        <h2 class="underline yellow-underline">Contact</h2>
+    <div {@attach revealTitle} class="left-side">
+        <div class="animated-header">
+            <h3>03</h3>
+            <h2 class="underline yellow-underline">Contact</h2>
+        </div>
     </div>
     <div class="right-side">
         <h2 class="contact-header">Let's get in touch!</h2>
